@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/signin', function(req, res, next) {
   res.render('signin');
 });
+
 router.get('/profile', function(req, res, next) {
   res.render('profile');
 });
