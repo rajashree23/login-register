@@ -8,5 +8,5 @@ var userSchema = new Schema({
 	password: {type:String,required:true},
 	// gender: {type:String},
 });
-var userModel = mongoose.model('user',userSchema);
+var userModel = mongoose.model('details',userSchema);
 module.exports = userModel;
