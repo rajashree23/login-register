@@ -13,8 +13,9 @@ var login = function(req, res) {
                 var details = {
                     "name": user.name,
                     "email": user.email,
-                    // "phone": user.phone,
-                    // "gender": user.gender,
+                    "phone": user.phone,
+                    "username":user.username,
+                    "gender": user.gender,
                 };
                 req.session.user = details;
                 return res.redirect('/profile');

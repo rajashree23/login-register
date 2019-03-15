@@ -35,12 +35,20 @@ router.get('/profile', function(req, res) {
     }
 
 });
+router.post('/logout',function(req,res,next){
+   req.session.user=null;
+   res.render('signin', {
+       "msg": "Logged out succesfully"
+   });
+
+});
 
 router.get('/loginhere',function(req,res,next){
   res.redirect("/signin");
 });
 
 router.post('/profile1', register.register);
+
 
 
 router.post('/profile2', login.login);
